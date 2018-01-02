@@ -1,5 +1,7 @@
 # KViewBinding
 
+Simple resource binding using kotlin delegates.  This does not handle listeners.  I recommend RxBinding for such things.
+
 Sample Usage:
 
 ```::kotlin
