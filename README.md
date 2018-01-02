@@ -4,7 +4,7 @@ Simple resource binding using kotlin delegates.  This does not handle listeners.
 
 Sample Usage:
 
-```::kotlin
+```kotlin
 class CustomFragment : Fragment() {
 
     val textView: TextView by bindView(R.id.custom_view_text_view)
@@ -27,7 +27,7 @@ class CustomFragment : Fragment() {
 
 ## On JCenter
 
-```::groovy
+```groovy
 repositories { 
     maven { 
         url "https://dl.bintray.com/exallium/maven" 
