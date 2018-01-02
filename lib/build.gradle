@@ -10,7 +10,7 @@ android {
         minSdkVersion 16
         targetSdkVersion 27
         versionCode 1
-        versionName "0.1"
+        versionName "0.1.1"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -57,11 +57,13 @@ def pomConfig = {
 publishing {
     publications {
         MyPublication(MavenPublication) {
+            artifact("$buildDir/outputs/aar/lib-release.aar")
             groupId 'com.exallium.ktviewbinding'
             artifactId 'lib'
-            version '0.1'
+            version '0.1.1'
 
             pom.withXml {
+                def dependenciesNode = asNode().appendNode('dependencies')
                 // Iterate over the implementation dependencies (we don't want the test ones), adding a <dependency> node for each
                 configurations.implementation.allDependencies.each {
                     // Ensure dependencies such as fileTree are not included.
@@ -92,7 +94,7 @@ bintray {
         licenses = ['MIT']
         vcsUrl = 'https://github.com/exallium/KViewBinding'
         version {
-            name = '0.1'
+            name = '0.1.1'
         }
     }
 }

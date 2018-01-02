@@ -25,4 +25,12 @@ class CustomFragment : Fragment() {
 
 ## On JCenter
 
+```
+repositories { 
+    maven { 
+        url "https://dl.bintray.com/exallium/maven" 
+    }
+}
 
+implementation "com.exallium.ktviewbinding:lib:0.1.1"
+```
