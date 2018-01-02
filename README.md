@@ -25,6 +25,11 @@ class CustomFragment : Fragment() {
 }
 ```
 
+## Features
+
+* Extension functions which will work for App Compat Activities / Fragments, Context, and Views
+* Extension functions for custom types with single-method-interfaces to help define these types
+
 ## On JCenter
 
 ```groovy
