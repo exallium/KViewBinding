@@ -1,1 +1,1 @@
-include ':app', ':kviewbinding'
+include ':app', ':lib'

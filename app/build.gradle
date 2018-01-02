@@ -5,11 +5,11 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 27
     defaultConfig {
         applicationId "com.exallium.kviewbinder"
         minSdkVersion 16
-        targetSdkVersion 26
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -30,11 +30,11 @@ android {
 
 dependencies {
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
-    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:appcompat-v7:27.0.2'
     testImplementation 'junit:junit:4.12'
     testImplementation "org.robolectric:robolectric:3.6.1"
     testImplementation "org.robolectric:shadows-support-v4:3.3.2"
     testImplementation 'org.amshove.kluent:kluent:1.32'
     testImplementation "com.nhaarman:mockito-kotlin-kt1.1:1.5.0"
-    compile project(path: ':kviewbinding')
+    compile project(path: ':lib')
 }
