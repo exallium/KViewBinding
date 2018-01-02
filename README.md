@@ -41,3 +41,9 @@ repositories {
 
 implementation "com.exallium.ktviewbinding:lib:0.1.1"
 ```
+
+## TODO
+
+* String Arrays and other unsupported resources
+* Better optionality through Kotlin's type system
+* bindX methods which take Activity / Context / Fragment / View so as to not break encapsulation
