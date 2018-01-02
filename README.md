@@ -2,7 +2,7 @@
 
 Sample Usage:
 
-```
+```::kotlin
 class CustomFragment : Fragment() {
 
     val textView: TextView by bindView(R.id.custom_view_text_view)
@@ -25,7 +25,7 @@ class CustomFragment : Fragment() {
 
 ## On JCenter
 
-```
+```::groovy
 repositories { 
     maven { 
         url "https://dl.bintray.com/exallium/maven" 
