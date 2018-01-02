@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">KViewBinder</string>
+    <string name="fmt">%1$s</string>
+</resources>
