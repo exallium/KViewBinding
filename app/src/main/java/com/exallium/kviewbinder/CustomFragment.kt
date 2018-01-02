@@ -28,8 +28,8 @@ class CustomFragment : Fragment() {
     val formatStr by bindString(R.string.fmt, "asdf")
     val text by bindText(R.string.app_name)
 
-    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater?.inflate(R.layout.custom_view, container, false)
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        return inflater.inflate(R.layout.custom_view, container, false)
     }
 
 }

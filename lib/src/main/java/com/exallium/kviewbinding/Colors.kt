@@ -14,7 +14,7 @@ interface ColorBinder {
 private fun getColor(context: Context, colorRes: Int) = ContextCompat.getColor(context, colorRes)
 
 fun View.bindColor(@ColorRes colorRes: Int): Lazy<Int> = bindColor(colorRes, { getColor(this.context, it) })
-fun Fragment.bindColor(@ColorRes colorRes: Int): Lazy<Int> = bindColor(colorRes, { getColor(this.context, it) })
+fun Fragment.bindColor(@ColorRes colorRes: Int): Lazy<Int> = bindColor(colorRes, { getColor(this.context!!, it) })
 fun Context.bindColor(@ColorRes colorRes: Int): Lazy<Int> = bindColor(colorRes, { getColor(this, it) })
 fun ColorBinder.bindColor(@ColorRes colorRes: Int): Lazy<Int> = bindColor(colorRes, this::getColor)
 fun bindColor(@ColorRes colorRes: Int, bindFn: BindResourceFn<Int, Int>) = lazyBindResource(colorRes, bindFn)
